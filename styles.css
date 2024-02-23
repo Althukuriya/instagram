@@ -148,3 +148,17 @@ body {
 .footer-buttons .btn:hover {
   background-color: #ff3c12;
 }
+/* Toggle button styles */
+.toggle-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Change color as needed */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3; /* Change color as needed */
+}
