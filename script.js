@@ -2,12 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var toggleButton = document.getElementById('toggleButton');
   var sidebar = document.getElementById('sidebar');
   var isSidebarOn = false;
-  var content = document.querySelector('.content');
-
-  function isYouTubeOrInstagramReels() {
-    var currentUrl = window.location.href;
-    return (currentUrl.includes('youtube.com') || currentUrl.includes('instagram.com')) && currentUrl.includes('/reels/');
-  }
 
   function toggleSidebar(show) {
     if (show) {
@@ -31,9 +25,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Check if sidebar should be initially on based on user preference and if they are on YouTube or Instagram reels
+  // Check if sidebar should be initially on based on user preference
   var sidebarPreference = localStorage.getItem('sidebarPreference');
-  if (sidebarPreference === 'on' && isYouTubeOrInstagramReels()) {
+  if (sidebarPreference === 'on') {
     toggleSidebar(true);
   }
 });
